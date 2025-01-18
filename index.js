@@ -112,7 +112,7 @@ exports.redToBlack = function( txprivkeyhex, rxpubkeyhex, redobj ) {
 
   let privkey = ec.keyFromPrivate( txprivkeyhex, 'hex' )
   let sig = Buffer.from( privkey.sign( msghash ).toDER() )
-  let txpubkeyhex = privkey.getPublic().encode( 'hex' )
+  let txpubkeyhex = privkey.getPublic( true, 'hex' )
 
   let result = JSON.parse( JSON.stringify(exports.BLACKMSG) )
   result.msghex = msg.toString('hex')
