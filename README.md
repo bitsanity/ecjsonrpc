@@ -1,5 +1,6 @@
 JavaScript library for encrypting and exchanging JSON-RPC messages.
 
+UPDATE: published in npm 18 Feb 2026
 
 ## Installation
 
