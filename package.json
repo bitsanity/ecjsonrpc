@@ -1,0 +1,36 @@
+{
+  "name": "ecjsonrpc",
+  "version": "1.0.0",
+  "description": "JavaScript library for encrypting and exchanging JSON-RPC messages using Elliptic Curve Integrated Encryption Scheme ECIES.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "smoke": "node test.js"
+  },
+  "keywords": [
+    "json-rpc",
+    "encryption",
+    "ecies",
+    "ecdsa",
+    "secp256k1"
+  ],
+  "author": "",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "eciesjs": "^0.4.15",
+    "elliptic": "^6.6.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "repository": "https://github.com/bitsanity/ecjsonrpc/test.git"
+  }
+}
+

@@ -1,6 +1,26 @@
 # ecjsonrpc
 Javascript library for encrypting and exchanging json-rpc messages.
 
+
+## Installation
+
+```bash
+npm install ecjsonrpc
+```
+
+## Quick start
+
+```js
+const ecjsonrpc = require("ecjsonrpc")
+
+const client = ecjsonrpc.makeKey()
+const server = ecjsonrpc.makeKey()
+const request = { ...ecjsonrpc.REQUEST, method: "ping", params: [], id: 1 }
+
+const encrypted = ecjsonrpc.redToBlack(client.prv, server.pub, request)
+const decrypted = ecjsonrpc.blackToRed(server.prv, encrypted)
+```
+
 ## Protocol
 
 This custom protocol works as follows:
