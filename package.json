@@ -1,5 +1,6 @@
 {
   "name": "ecjsonrpc",
+  "access": "public",
   "version": "1.0.0",
   "description": "JavaScript library for encrypting and exchanging JSON-RPC messages using Elliptic Curve Integrated Encryption Scheme ECIES.",
   "main": "index.js",
