@@ -146,7 +146,7 @@ exports.isJSONRPC = function( obj ) {
 exports.makeKey = function() {
   let privkeyhex = Buffer.from( crypto.randomBytes(32) ).toString('hex')
   let privkey = ec.keyFromPrivate( privkeyhex, 'hex' )
-  let pubkeyhex = privkey.getPublic(true).encode( 'hex' )
+  let pubkeyhex = privkey.getPublic( true, 'hex' )
 
   return {
     prv : privkeyhex,
